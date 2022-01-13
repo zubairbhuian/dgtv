@@ -98,6 +98,7 @@ input {
   align-items: center;
   border: none;
   outline: none;
+  cursor: pointer !important;
 }
 
 h1,
@@ -936,6 +937,7 @@ h6 {
   color: var(--white-color) !important;
   font-weight: var(--regular);
   font-size: var(--small-font-size);
+  transition: all 0.3s ease-in;
 }
 
 .main-footer .nav-link .bi {
@@ -1069,11 +1071,13 @@ h6 {
   width: 110px;
   font-size: var(--smaller-font-size);
   font-weight: var(--bold);
+  cursor: pointer !important;
 }
 
 .main-body .banner .banner-dis .btn:last-child {
   background-color: var(--white-color);
   color: var(--black-color);
+  cursor: pointer !important;
 }
 
 .main-body .banner .banner-dis .btn:first-child {
@@ -2031,13 +2035,13 @@ h6 {
 }
 
 .main-nav .nav-link,
-.main-footer.nav-link {
+.main-footer .nav-link {
   color: #ffffff !important;
   transition: all 0.3s ease-in;
 }
 .main-nav .nav-link:hover,
-.main-footer.nav-link:hover {
-  color: #d8d8d8 !important;
+.main-footer .nav-link:hover {
+  color: #d6d6d6 !important;
 }
 
 /*# sourceMappingURL=style.css.map */
