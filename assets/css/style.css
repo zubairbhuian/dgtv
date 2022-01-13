@@ -21,8 +21,8 @@
   --z-10: 10;
   --z-100: 100;
   --z-999: 999;
-  --normal-font-size: 1.125rem;
-  --small-font-size: 1rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .895rem;
   --smaller-font-size: 0.875rem;
 }
 @media screen and (max-width: 992px) {
