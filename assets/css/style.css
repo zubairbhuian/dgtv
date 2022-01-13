@@ -123,10 +123,10 @@ h6 {
   align-items: center;
   margin-left: 4px;
   margin-right: 4px;
-  transition: all 0.3s ease-out;
+  transition: all 0.1s ease-out;
 }
 .my-pp:hover {
-  outline: 3px solid var(--description-color);
+  outline: 2ypx solid #dddddd;
 }
 .my-pp img {
   width: 36px;
@@ -818,6 +818,10 @@ h6 {
 
 .mob-nav ul li > a {
   color: var(--white-color);
+  transition: all 0.3s ease;
+}
+.mob-nav ul li > a:hover {
+  color: #cfcfcf;
 }
 
 .main-nav {
@@ -897,15 +901,20 @@ h6 {
   color: var(--white-color);
   margin-top: 20px;
   user-select: none;
+  transition: all 0.2s ease-in;
 }
 
 .mob-nav-offcanvas h1 a:hover {
-  color: var(--white-color) !important;
+  color: #d1d1d1 !important;
 }
 
 .mob-nav-offcanvas ul li a {
   color: var(--white-color);
   position: relative;
+  transition: all 0.2s ease-in;
+}
+.mob-nav-offcanvas ul li a:hover {
+  color: #cfcfcf;
 }
 
 .main-footer {
@@ -936,6 +945,10 @@ h6 {
   border-radius: 50%;
   background-color: var(--white-color);
   color: var(--black-color);
+  transition: all 0.1s ease-in;
+}
+.main-footer .nav-link .bi:hover {
+  color: rgba(0, 0, 0, 0.671);
 }
 
 .slyder-area {
@@ -1652,6 +1665,10 @@ h6 {
   border-radius: 8px;
   background-color: rgba(0, 0, 0, 0.644);
   position: relative;
+  transition: all 0.2s ease-out;
+}
+.shows-home .shows-btn:hover {
+  background-color: rgba(0, 0, 0, 0.726);
 }
 
 .shows-nav {
@@ -2011,6 +2028,16 @@ h6 {
 
 .navbar-collapse {
   height: 45px;
+}
+
+.main-nav .nav-link,
+.main-footer.nav-link {
+  color: #ffffff !important;
+  transition: all 0.3s ease-in;
+}
+.main-nav .nav-link:hover,
+.main-footer.nav-link:hover {
+  color: #d8d8d8 !important;
 }
 
 /*# sourceMappingURL=style.css.map */
