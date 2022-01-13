@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/grid.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Contact Us</title>
+    <title>Account</title>
   </head>
   <body>
     <div class="home-main">
@@ -210,7 +210,7 @@
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-xl">
+        <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header d-none"></div>
             <div class="modal-body">
@@ -356,7 +356,7 @@
             <div class="account-content-area mt-5">
               <nav class="mt-5">
                 <ul>
-                  <li><a class="active" href="account.html">Account</a></li>
+                  <li><a class="flex active" href="account.html">Account</a></li>
                 </ul>
                 <ul>
                   <li><a href="help.html">Help Center</a></li>
@@ -375,21 +375,181 @@
                 <h6>Email Address</h6>
                 <div class="my-3">
                   <span>Your email address is zubairbhuian@gmail.com</span>
-                  <button>Change Email</button>
+                  <button
+                    data-bs-toggle="modal"
+                    data-bs-target="#email-change-mod"
+                  >
+                    Change Email
+                  </button>
                 </div>
                 <div class="my-3">
                   <h6>Password</h6>
-                  <button>Change Password</button>
+                  <button
+                    data-bs-toggle="modal"
+                    data-bs-target="#change-password-mod"
+                  >
+                    Change Password
+                  </button>
                 </div>
                 <div class="my-3">
                   <h6>Subscription</h6>
-                  <button>Cancle Subscription</button>
+                  <button
+                    data-bs-toggle="modal"
+                    data-bs-target="#cencle-Subscription-mod"
+                  >
+                    Cancle Subscription
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!--///////////////////////////////////    Modal //////////////////////////////-->
+      <!-- Change Email  -->
+      <div
+        class="modal fade"
+        id="email-change-mod"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title ms-4" id="exampleModalLabel">
+                Change Your Email
+              </h5>
+            </div>
+            <div class="modal-body">
+              <form action="#" class="p-4">
+                <input
+                  type="email"
+                  class="form-control mb-3 py-3"
+                  placeholder="Current Email"
+                  name="current-email"
+                  required
+                />
+                <input
+                  type="email"
+                  class="form-control mb-3 py-3"
+                  placeholder="New Email"
+                  name="new-email"
+                  required
+                />
+                <input
+                  type="password"
+                  class="form-control mb-3 py-3"
+                  id="username"
+                  placeholder="New Password"
+                  name="new-password"
+                  required
+                />
+                <div class="my-5 account-set-btns">
+                  <button type="submit">Save To Change</button>
+                  <button class="btn-secondary" data-bs-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Change Password  -->
+      <div
+        class="modal fade"
+        id="change-password-mod"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title ms-4" id="exampleModalLabel">
+                Change Your Email
+              </h5>
+            </div>
+            <div class="modal-body">
+              <form action="#" class="p-4">
+                <input
+                  type="email"
+                  class="form-control mb-3 py-3"
+                  placeholder="Email"
+                  name="email"
+                  required
+                />
+                <input
+                  type="password"
+                  class="form-control mb-3 py-3"
+                  placeholder="Current Password"
+                  name="password"
+                  required
+                />
+                <input
+                  type="password"
+                  class="form-control mb-3 py-3"
+                  id="username"
+                  placeholder="New Password"
+                  name="new-password"
+                  required
+                />
+                <div class="my-5 account-set-btns">
+                  <button type="submit">Save To Change</button>
+                  <button class="btn-secondary" data-bs-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cencle Subscription -->
+      <div
+        class="modal fade"
+        id="cencle-Subscription-mod"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title ms-4" id="exampleModalLabel">
+                Change Your Email
+              </h5>
+            </div>
+            <div class="modal-body">
+              <form action="#" class="p-4">
+                <input
+                  type="email"
+                  class="form-control mb-3 py-3"
+                  placeholder="Email"
+                  name="email"
+                  required
+                />
+                <input
+                  type="password"
+                  class="form-control mb-3 py-3"
+                  id="username"
+                  placeholder="Password"
+                  name="password"
+                  required
+                />
+                <div class="my-5 account-set-btns">
+                  <button type="submit">Save To Change</button>
+                  <button class="btn-secondary" data-bs-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--///////////////////////////////////    Modal //////////////////////////////-->
 
       <!-- ================Account end here============ -->
 
@@ -399,7 +559,7 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="help.html"
+                <a class="nav-link" aria-current="page" href="help.html"
                   >Help</a
                 >
               </li>
@@ -415,7 +575,7 @@
             </ul>
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a class="nav-link" aria-current="page" href="#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"

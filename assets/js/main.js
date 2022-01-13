@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 6,
   spaceBetween: 8,
@@ -22,7 +13,8 @@ var swiper = new Swiper(".mySwiper", {
   autoplay: {
     delay: 7500,
     disableOnInteraction: false,
-  },loop: true,
+  },
+  loop: true,
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -37,20 +29,18 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: 4,
     },
     1200: {
-        slidesPerView:5,
-      },
-      1400: {
-        slidesPerView: 6,
-      },
+      slidesPerView: 5,
+    },
+    1400: {
+      slidesPerView: 6,
+    },
   },
 });
 
 const showsBnt = document.querySelector(".shows-btn");
-const showsNav =document.querySelector(".shows-nav");
+const showsNav = document.querySelector(".shows-nav");
 
-showsBnt.addEventListener('click', () =>{
-  showsNav.classList.toggle("active");
+showsBnt.addEventListener("click", () => {
+  showsNav.classList.toggle("showf");
   showsBnt.classList.toggle("btnBorder");
-
-})
-
+});
