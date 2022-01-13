@@ -57,12 +57,16 @@
         tabindex="-1"
       >
         <div class="offcanvas-header">
-          <h1 class="offcanvas-title ps-2"><a href="home.html"> DGTV Graceflix </a></h1>
+          <h1 class="offcanvas-title ps-2">
+            <a href="home.html"> DGTV Graceflix </a>
+          </h1>
         </div>
         <div class="mt-5">
           <ul class="navbar-nav me-auto mb-4 mb-lg-0">
             <li class="nav-item py-2">
-              <a class="nav-link" aria-current="page" href="account.html">Account</a>
+              <a class="nav-link" aria-current="page" href="account.html"
+                >Account</a
+              >
             </li>
             <li class="nav-item py-2">
               <a class="nav-link" href="help.html">Help Center</a>
@@ -120,7 +124,7 @@
               </li>
             </ul>
 
-            <ul class="navbar-nav mb-2 mb-lg-0">
+            <ul class="navbar-nav navbar-nav-right mb-2 mb-lg-0">
               <li class="nav-item">
                 <span
                   class="nav-link"
@@ -144,7 +148,12 @@
                 </span>
               </li>
               <li class="nav-item">
-                <span class="nav-link">
+                <span
+                  class="nav-link"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasScrolling2"
+                  aria-controls="offcanvasScrolling"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -160,28 +169,32 @@
                 </span>
               </li>
               <li class="dropdown dropstart">
-                <div class="my-pp " data-bs-toggle="dropdown">
+                <div class="my-pp" data-bs-toggle="dropdown">
                   <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  data-icon="user"
-                  class="svg-inline--fa fa-user fa-w-14"
-                  role="img"
-                  viewBox="0 0 448 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
-                  />
-                </svg>
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="user"
+                    class="svg-inline--fa fa-user fa-w-14"
+                    role="img"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                    />
+                  </svg>
                 </div>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="account.html">Account Settings</a>
+                    <a class="dropdown-item" href="account.html"
+                      >Account Settings</a
+                    >
                   </li>
-                  <li><a class="dropdown-item" href="help.html">Help Center</a></li>
+                  <li>
+                    <a class="dropdown-item" href="help.html">Help Center</a>
+                  </li>
                   <li><a class="dropdown-item" href="#">Log Out DGTV</a></li>
                 </ul>
               </li>
@@ -228,27 +241,118 @@
                   </button>
                 </div>
               </form>
-              <ul class="search-sug">
-                <li>hellow</li>
-                <li>hellow</li>
-                <li>hellow</li>
-                <li>hellow</li>
-              </ul>
+              <!-- Suggetion -->
+              <div class="search-sug">
+                <div class="card mb-3">
+                  <a href="#">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="assets/images/videos-thum/image50.png"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body ms-3">
+                          <h5 class="card-title mt-3">Card title</h5>
+                          <p class="card-text">
+                            This is a wider card with supporting text below as a
+                            natural lead-in to additional content. This content
+                            is a little bit longer.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Sugg 2 -->
+                <div class="card mb-3">
+                  <a href="#">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="assets/images/videos-thum/image50.png"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body ms-3">
+                          <h5 class="card-title mt-3">Card title</h5>
+                          <p class="card-text">
+                            This is a wider card with supporting text below as a
+                            natural lead-in to additional content. This content
+                            is a little bit longer.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Sugg 3 -->
+                <div class="card mb-3">
+                  <a href="#">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="assets/images/videos-thum/image50.png"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body ms-3">
+                          <h5 class="card-title mt-3">Card title</h5>
+                          <p class="card-text">
+                            This is a wider card with supporting text below as a
+                            natural lead-in to additional content. This content
+                            is a little bit longer.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- message-offcanvas -->
+      <div
+        class="offcanvas offcanvas-end message-offcanvas"
+        data-bs-scroll="true"
+        data-bs-backdrop="false"
+        tabindex="-1"
+        id="offcanvasScrolling2"
+        aria-labelledby="offcanvasScrollingLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+            Your Message
+          </h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>
+            Try scrolling the rest of the page to see this option in action.
+          </p>
+        </div>
+      </div>
+      <!-- message-offcanvas -->
       <!-- ================nav end here ================= -->
       <!-- ================video section start here============ -->
       <div class="video-page-main">
         <div class="container">
           <div class="video-page-area">
             <div class="video-section mb-5">
-              <video controls>
-                <source src="assets/videos/mov_bbb.mp4" type="video/mp4" />
-                <source src="mov_bbb.ogg" type="video/ogg" />
-                Your browser does not support HTML video.
-              </video>
+              <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
               <h3 class="mt-1">Lorem ipsum dolor sit amet</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -413,7 +517,9 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="help.html">Help</a>
+                <a class="nav-link active" aria-current="page" href="help.html"
+                  >Help</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="terms.html">Terms</a>

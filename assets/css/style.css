@@ -1,4 +1,4 @@
- @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 :root {
   --primary-color: #b30e0e;
@@ -789,7 +789,7 @@ h6 {
 .main-nav {
   width: 100%;
   height: 80px;
-  background: var(--meta-color);
+  background: var(--primary-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -859,15 +859,19 @@ h6 {
   padding-left: 30px;
 }
 
-.mob-nav-offcanvas .h1 {
-  color: var(--primary-color);
-  font-weight: var(--bold);
+.mob-nav-offcanvas h1 a {
+  color: var(--white-color);
   margin-top: 20px;
   user-select: none;
 }
 
-.mob-nav-offcanvas .h1 a:hover {
-  color: var(--primary-color) !important;
+.mob-nav-offcanvas h1 a:hover {
+  color: var(--white-color) !important;
+}
+
+.mob-nav-offcanvas ul li a {
+  color: var(--white-color);
+  position: relative;
 }
 
 .main-footer {
@@ -974,9 +978,9 @@ h6 {
 .main-body .banner .banner-dis {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -31px;
   width: 100%;
-  height: 400px;
+  height: 227px;
   margin-left: 100px;
 }
 
@@ -1420,9 +1424,7 @@ h6 {
 }
 
 .home-search .modal-content {
-  background-color: var(--body-color);
-  top: 75px;
-  border-radius: 12px;
+  background-color: var(--meta-color);
 }
 
 .home-search .modal-content .modal-dialog {
@@ -1430,10 +1432,10 @@ h6 {
 }
 
 .home-search .modal-content .modal-body {
-  height: 60vh;
+  height: 600px;
   padding: 30px 60px;
-  border: 1px solid var(--primary-color);
-  border-radius: 8px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .home-search .modal-content .modal-header {
@@ -1446,7 +1448,7 @@ h6 {
 }
 
 .home-search .modal-content .input-group input {
-  background: var(--body-color);
+  background: var(--meta-color);
   box-shadow: none;
   font-size: var(--normal-font-size);
   font-weight: var(--regular);
@@ -1457,13 +1459,31 @@ h6 {
 }
 
 .home-search .modal-content .input-group .input-group-text {
-  background-color: var(--body-color);
+  background-color: var(--meta-color);
   border: none;
 }
 
 .video-modal .modal-dialog {
   max-width: 991px;
+  height: 800px;
+  overflow-x: hidden;
   background-color: var(--meta-color);
+}
+@media screen and (max-width: 1500px) {
+  .video-modal .modal-dialog {
+    max-width: 650px;
+    height: 600px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .video-modal .modal-dialog {
+    max-width: 650px;
+  }
+}
+@media (max-width: 991.98px) {
+  .video-modal .modal-dialog {
+    max-width: 560px;
+  }
 }
 
 .video-modal .modal-content {
@@ -1475,6 +1495,20 @@ h6 {
   padding: 0;
   position: relative;
 }
+.video-modal .modal-body .vid-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.video-modal .modal-body .vid-img::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to bottom, rgba(14, 13, 13, 0), #1d1c1c);
+}
 
 .video-modal .modal-body img {
   width: 100%;
@@ -1483,6 +1517,11 @@ h6 {
 
 .video-modal .vid-btns {
   padding: 47px 50px;
+}
+@media (max-width: 575.98px) {
+  .video-modal .vid-btns {
+    padding: 47px 10px;
+  }
 }
 
 .video-modal .vid-btns h2 {
@@ -1494,7 +1533,7 @@ h6 {
 }
 
 .video-modal .vid-btns .btn {
-  width: 400px;
+  width: 100% !important;
   height: 30px;
   margin-bottom: 7px;
   border-radius: 4px;
@@ -1526,12 +1565,22 @@ h6 {
 
 .close-vid-btn {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 14px;
+  right: 14px;
   border-radius: 50%;
   width: 30;
   width: 55px;
   height: 55px;
+  background-color: var(--black-color);
+}
+
+.video-modal .vid-btns .mt-5 {
+  padding-top: 19px;
+}
+@media (min-width: 768px) {
+  .video-modal .vid-btns .mt-5 {
+    padding-left: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
@@ -1560,16 +1609,16 @@ h6 {
   padding-left: 25px;
   padding-right: 25px;
   border-radius: 8px;
-  background-color: var(--primary-color);
+  background-color: rgba(0, 0, 0, 0.644);
   position: relative;
 }
 
 .shows-nav {
   max-width: 500px;
-  border: 4px solid var(--primary-color);
+  border: 4px solid rgba(0, 0, 0, 0.37);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.534);
+  background-color: rgba(0, 0, 0, 0.37);
   display: none;
   margin: auto;
   z-index: 999;
@@ -1595,7 +1644,7 @@ h6 {
   height: 3px;
   bottom: -3px;
   left: 0;
-  background-color: var(--primary-color);
+  background-color: var(--white-color);
   transition: width 0.4s ease;
 }
 .shows-nav ul li a:hover::before {
@@ -1617,14 +1666,20 @@ h6 {
   width: 100%;
   position: relative;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   .video-page-main {
     padding-top: 12px;
   }
 }
 
-.video-section video {
+.video-section iframe {
   width: 100%;
+  height: 500px;
+}
+@media (max-width: 767.98px) {
+  .video-section iframe {
+    height: 350px;
+  }
 }
 .video-section p {
   max-width: 500px;
@@ -1881,14 +1936,50 @@ h6 {
   border-color: var(--primary-color);
 }
 
-.search-sug {
-  list-style: none;
-  padding: 0;
+.search-sug .card {
+  background-color: rgba(0, 0, 0, 0.432);
+  padding: 30px 25px;
+  border-radius: 8px;
 }
-.search-sug li {
-  background-color: var(--meta-color);
-  padding: 10px 15px;
-  margin: 2px auto;
+.search-sug a {
+  color: var(--white-color);
+}
+.search-sug img {
+  width: 300px;
+  height: 150px;
+}
+
+.navbar-nav-right .nav-item .nav-link {
+  margin-right: 20px;
+  padding-top: 20px;
+}
+.navbar-nav-right .nav-item {
+  margin-top: 2px;
+}
+
+.navbar-collapse {
+  height: 45px;
+}
+
+.modal.show .modal-dialog {
+  transform: none;
+  top: 70px;
+}
+@media (max-width: 575.98px) {
+  .modal.show .modal-dialog {
+    top: 0;
+  }
+}
+
+.message-offcanvas {
+  background-color: white;
+  top: 80px;
+}
+.message-offcanvas .offcanvas-header {
+  color: var(--black-color);
+}
+.message-offcanvas .offcanvas-body {
+  color: var(--body-color);
 }
 
 /*# sourceMappingURL=style.css.map */
