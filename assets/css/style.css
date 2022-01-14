@@ -119,19 +119,18 @@ h6 {
 }
 
 .my-pp {
-  width: 36px;
-  height: 36px;
-  background-color: white !important;
+  width: 40px;
+  height: 40px;
+  background-color: #fff !important;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 4px;
   margin-right: 4px;
-  transition: all 0.1s ease-out;
 }
 .my-pp:hover {
-  outline: 2ypx solid #dddddd;
+  outline: 4px solid rgba(0, 0, 0, 0.281);
 }
 .my-pp img {
   width: 36px;
@@ -2041,12 +2040,21 @@ h6 {
   color: var(--body-color);
 }
 
-.navbar-nav-right .nav-item .nav-link {
-  margin-right: 20px;
-  padding-top: 20px;
-}
 .navbar-nav-right .nav-item {
-  margin-top: 2px;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+}
+.navbar-nav-right .nav-item svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navbar-nav-right .nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.171);
 }
 
 .navbar-collapse {
