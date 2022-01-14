@@ -22,7 +22,7 @@
   --z-100: 100;
   --z-999: 999;
   --normal-font-size: 1rem;
-  --small-font-size: .895rem;
+  --small-font-size: 0.895rem;
   --smaller-font-size: 0.875rem;
 }
 @media screen and (max-width: 992px) {
@@ -99,6 +99,10 @@ input {
   border: none;
   outline: none;
   cursor: pointer !important;
+  transition: all 0.6s ease;
+}
+.btn:hover {
+  background-color: #b30e0ee1;
 }
 
 h1,
@@ -151,18 +155,30 @@ h6 {
   border: none;
 }
 .account-set-btns button:first-child {
-  background-color: #217500;
-  transition: all 0.6s ease;
-}
-.account-set-btns button:first-child:hover {
-  background-color: rgba(33, 117, 0, 0.705);
-}
-.account-set-btns button:last-child {
   background-color: var(--primary-color);
   transition: all 0.6s ease;
 }
-.account-set-btns button:last-child:hover {
+.account-set-btns button:first-child:hover {
   background-color: #b30e0ebd;
+}
+.account-set-btns button:last-child {
+  background-color: var(--black-color);
+  transition: all 0.6s ease;
+  position: absolute;
+  top: -56px;
+  right: 28px;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+}
+.account-set-btns button:last-child svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.account-set-btns button:last-child:hover {
+  background-color: rgba(0, 0, 0, 0.377);
 }
 
 .flex {
@@ -1495,6 +1511,9 @@ h6 {
   overflow-y: scroll;
   overflow-x: hidden;
 }
+.home-search .modal-content .modal-body input:focus {
+  border: none !important;
+}
 
 .home-search .modal-content .modal-header {
   border: none;
@@ -2042,6 +2061,22 @@ h6 {
 .main-nav .nav-link:hover,
 .main-footer .nav-link:hover {
   color: #d6d6d6 !important;
+}
+
+textarea:focus,
+input:focus {
+  border: 1px solid var(--white-color) !important;
+}
+
+textarea:focus,
+input {
+  box-shadow: none !important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff !important;
+  text-decoration: none;
+  background-color: #b30e0e;
 }
 
 /*# sourceMappingURL=style.css.map */
