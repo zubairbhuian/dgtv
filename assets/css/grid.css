@@ -1832,13 +1832,13 @@ progress {
   z-index: 1050;
   width: 100vw;
   height: 100vh;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.849);
 }
 .modal-backdrop.fade {
   opacity: 0;
 }
 .modal-backdrop.show {
-  opacity: 0.75;
+  opacity: 0.85;
 }
 
 .modal-header {
@@ -2140,7 +2140,7 @@ progress {
   height: 1.5em;
 }
 .form-control::placeholder {
-  color: #ada8a8;
+  color: #4d4d4dcb;
   opacity: 1;
 }
 .form-control:disabled, .form-control[readonly] {
@@ -3634,13 +3634,13 @@ textarea.form-control-lg {
   z-index: 1040;
   width: 100vw;
   height: 100vh;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.849);
 }
 .offcanvas-backdrop.fade {
   opacity: 0;
 }
 .offcanvas-backdrop.show {
-  opacity: 0.75;
+  opacity: 0.85;
 }
 
 .offcanvas-header {
