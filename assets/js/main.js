@@ -36,11 +36,18 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
-
-const showsBnt = document.querySelector(".shows-btn");
-const showsNav = document.querySelector(".shows-nav");
-
-showsBnt.addEventListener("click", () => {
-  showsNav.classList.toggle("showf");
-  showsBnt.classList.toggle("btnBorder");
-});
+// Favorite Btn
+function favoriteBtn(){
+  const x = document.querySelector(".btn2");
+  if (x.innerHTML === "Add to Favarites") {
+    x.innerHTML = "Remove from Favorites";
+  } else {
+    x.innerHTML = "Add to Favarites";
+  }
+  x.classList.toggle("color-primary");
+};
+// Shows Doc
+function showsDoc() {
+document.querySelector(".shows-btn").classList.toggle("btnBorder");
+document.querySelector(".shows-nav").classList.toggle("showf");
+};

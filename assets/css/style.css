@@ -102,7 +102,7 @@ input {
   transition: all 0.6s ease;
 }
 .btn:hover {
-  background-color: #b30e0eb6;
+  background-color: #860606fb;
 }
 
 h1,
@@ -855,8 +855,11 @@ h6 {
     display: none;
   }
 }
-.main-nav .navbar-brand {
+.navbar-brand {
   padding: 5px;
+}
+.navbar-brand img {
+  width: 55px;
 }
 
 .main-nav .nav-link {
@@ -874,9 +877,10 @@ h6 {
 }
 
 .main-nav .dropstart .dropdown-menu[data-bs-popper] {
-  top: 50px;
+  top: 57px;
   right: -10px;
   background-color: var(--white-color);
+  height: 183px;
 }
 
 .main-nav .dropdown-item {
@@ -1111,11 +1115,11 @@ h6 {
   width: 100%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black), url(../images/Banner/formbanner.png);
   height: 100vh;
-  overflow-y: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 .signin-page-main .header {
@@ -1149,7 +1153,7 @@ h6 {
   .signin-page-main .header .btn {
     width: 82px;
     height: 38px;
-    margin: 1px 0;
+    margin: 7px 0;
     border-radius: 5px;
   }
 }
@@ -1171,8 +1175,8 @@ h6 {
   }
 }
 .signin-page-main .banner h1 span {
-  text-shadow: 3px 3px 3px var(--white-color);
   color: var(--black-color);
+  text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
 }
 
 .signin-page-main .banner p {
@@ -1215,14 +1219,37 @@ h6 {
 .signin-page-main .banner .con-btn {
   display: flex;
   justify-content: center;
-  text-decoration: underline;
-  font-weight: var(--bold);
-  color: var(--white-color);
   line-height: 78px;
+  transition: all 0.5s ease;
+}
+.signin-page-main .banner .con-btn a {
+  font-weight: var(--bold);
+  text-decoration: underline;
+  color: var(--white-color);
+  font-size: 20px;
+}
+@media (max-width: 991.98px) {
+  .signin-page-main .banner .con-btn a {
+    font-size: 14px;
+  }
+}
+.signin-page-main .banner .con-btn a:hover {
+  color: var(--primary-color);
 }
 
 .signin-page-main a:hover {
   color: #ffff;
+}
+
+.signin-page-con .input-group input {
+  padding: 22px;
+  border: none !important;
+  outline: none !important;
+}
+@media (max-width: 767.98px) {
+  .signin-page-con .input-group input {
+    padding: 15px;
+  }
 }
 
 .signin-main {
@@ -1783,6 +1810,11 @@ h6 {
   width: 100%;
 }
 @media (min-width: 992px) {
+  .suggestion-videos .card img {
+    height: 190px;
+  }
+}
+@media (min-width: 992px) {
   .suggestion-videos .card .card-body {
     margin-left: 20px;
   }
@@ -2174,6 +2206,56 @@ input {
   z-index: 1;
   border-radius: 8px;
   transition: all 0.6s ease;
+}
+
+.favorites-main {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.register-main {
+  background: linear-gradient(to bottom, rgba(253, 253, 253, 0.705), rgba(255, 255, 255, 0.829)), url(../images/Banner/formbanner.png);
+}
+
+.register-area {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.register-area h1 {
+  color: var(--black-color);
+  padding-top: 30px !important;
+}
+.register-area .btn {
+  border-radius: 4px !important;
+}
+.register-area .btn:hover {
+  background-color: #7c0909;
+}
+
+.register-area-con {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.register-area-con div {
+  width: 150px;
+  height: 200px;
+  background-color: white;
+  margin-left: 5px;
+}
+
+.rech-2 {
+  border-top: 1px solid var(--black-color);
+}
+
+.register-check {
+  border-bottom: 1px solid var(--black-color);
+}
+.register-check svg,
+.register-check b {
+  color: var(--black-color) !important;
+  font-size: var(--smaller-font-size);
 }
 
 /*# sourceMappingURL=style.css.map */
