@@ -1177,7 +1177,7 @@ h6 {
 }
 .signin-page-main .banner h1 span {
   color: var(--black-color);
-  text-shadow: 0 2px #808d93, -1px 0px #cdd2d5, 2px 2px #808d93;
+  text-shadow: 0 2px #ffffff, -1px 0px #ffffff, 2px 2px #ffffff;
 }
 
 .signin-page-main .banner p {
