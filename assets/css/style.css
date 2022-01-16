@@ -1428,8 +1428,11 @@ h6 {
 }
 .loginto-dgtv .dg-sign a {
   color: var(--white-color) !important;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
   text-decoration: underline;
+}
+.loginto-dgtv .dg-sign a:hover {
+  color: var(--primary-color) !important;
 }
 
 .loginto-dgtv .dg-sign a:hover {
@@ -2306,6 +2309,11 @@ input {
 .popup-terms-main {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.log-con-pri:hover {
+  color: var(--white-color) !important;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
