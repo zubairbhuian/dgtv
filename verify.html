@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/grid.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Forget Passwort</title>
+  </head>
+  <body>
+    <!-- ==============Start Sign In Here=============== -->
+    <div class="signin-main flex-center forget-pass">
+      <!-- ============Start Long In Form Here ============ -->
+      <div class="form flex-center colum verify-pass">
+        <div class="tac">
+            <a href="index.html" class="navbar-brand">
+              <img class="mb-4" src="assets/images/logo/Logo4RGB.png" alt="logo" />
+            </a>
+          <h3>Verify Your Email</h3>
+          <p>Please enter the verification code we sent <br> to your email address</p>
+        </div>
+          <form action="#">
+            <div class="flex jcc">
+              <input class="mx-1" id="codeBox1" type="text" maxlength="1" onkeyup="onKeyUpEvent(1, event)" onfocus="onFocusEvent(1)"/>
+              <input class="mx-1" id="codeBox2" type="text" maxlength="1" onkeyup="onKeyUpEvent(2, event)" onfocus="onFocusEvent(2)"/>
+              <input class="mx-1" id="codeBox3" type="text" maxlength="1" onkeyup="onKeyUpEvent(3, event)" onfocus="onFocusEvent(3)"/>
+              <input class="mx-1" id="codeBox4" type="text" maxlength="1" onkeyup="onKeyUpEvent(4, event)" onfocus="onFocusEvent(4)"/>
+              <input class="mx-1" id="codeBox5" type="text" maxlength="1" onkeyup="onKeyUpEvent(5, event)" onfocus="onFocusEvent(5)"/>
+              <input class="mx-1" id="codeBox6" type="text" maxlength="1" onkeyup="onKeyUpEvent(6, event)" onfocus="onFocusEvent(6)"/>
+            </div>
+            <hr/>
+            <button type="submit" class="btn mt-0">Verify Me</button>
+          </form>
+      </div>
+      <!-- ==============End Long Inm Form Hrer============= -->
+    </div>
+    <!-- ================End Sign In Here================= -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

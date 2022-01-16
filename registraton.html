@@ -11,21 +11,24 @@
   <body>
     <!-- ==============Start Sign In Here=============== -->
     <div
-      class="signin-main signin-page-main flex-center registration-main colum"
+      class="signin-main signin-page-main  registration-main"
     >
-      <div class="header flex jcsb w100">
-        <div class="logo">
-          <a href="signinpage.html" class="navbar-brand">
+      <!-- ============Start Long In Form Here ============ -->
+      <div class="form relative">
+        <div class="tac">
+          <a href="index.html" class="navbar-brand">
             <img class="mb-4" src="assets/images/logo/Logo4RGB.png" alt="logo" />
           </a>
-        </div>
-        <a href="logintodgtv.html" class="btn me-1">Sign in</a>
-      </div>
-      <!-- ============Start Long In Form Here ============ -->
-      <div class="form flex-center colum relative">
-        <div class="tac">
           <h4>Create an Account (Registration)</h4>
-          <p class="mb-5">Create your passwort</p>
+          <p>Create your passwort</p>
+          <div class="extra-space">
+            <div class="alert alert-primary flex align-items-center" role="alert">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:"><path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>
+              <div>You can now check network connectivi</div>
+              <button type="button" class="btn-close ms-auto" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+          </div>
         </div>
         <form action="#">
           <div class="mb-2">
@@ -66,24 +69,50 @@
                 checked
               />
               <p>
-                I agree to the DGTV
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  Terms & Conditions</a
-                ><br />
-                <span
-                  >By checking the checkbox above, you agree to our
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
-                    Terms & Conditions,
-                  </a>
-
-                  <a href="#">and that you are over 18</a>, numquam?
+                I agree to the DGTV<a href="#" data-bs-toggle="modal"data-bs-target="#popup-terms">Terms & Conditions</a><br />
+                <span>By checking the checkbox above, you agree to our<a href="#" data-bs-toggle="modal"data-bs-target="#popup-terms">Terms & Conditions,</a>
+                  <a href="#" data-bs-toggle="modal"data-bs-target="#popup-terms">and that you are over 18</a>, numquam?
                 </span>
               </p>
             </div>
+            <p class="check-pare-down">Already member? <a href="login.html">Sign-in</a></p>
           </div>
           <button type="submit" class="btn mt-0">Next</button>
         </form>
       </div>
+      <!-- popup -->
+      <div class="modal fade popup-terms" id="popup-terms" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="terms-main popup-terms-main">
+              <div class="container">
+                <div class="terms-area">
+                  <h3>TERMS & CONDITIONS</h3>
+                  <hr />
+                  <h6>Welcome to DGTV!</h6>
+                  <p>
+                    These terms and conditions outline the rules and regulations for the use of DGTV's Website, located at https://derrickgrace2.online/.
+                    <br /><br />
+                    By accessing this website we assume you accept these terms and conditions. Do not continue to use DGTV if you do not agree to take all of the terms and conditions stated on this page.
+                    <br /><br />
+                    The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company's terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.
+                  </p>
+                  <p>
+                    <b>Search The Help Center To Find Answers Or, If You're Still Having Trouble, <a href="contactus.html">Contact Us.</a></b>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button type="button"class="btn popup-terms-btn"data-bs-dismiss="modal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
       <!-- ==============End Long Inm Form Hrer============= -->
     </div>
 

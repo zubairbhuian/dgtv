@@ -1143,6 +1143,7 @@ h6 {
   padding: 12px 12px;
   font-size: var(--normal-font-size);
   margin: 9px 0;
+  border-radius: 4px;
 }
 
 .signin-page-main .header .btn:hover {
@@ -1164,7 +1165,7 @@ h6 {
 .signin-page-main .banner h1 {
   text-align: center;
   line-height: 140%;
-  padding-top: 150px;
+  padding-top: 70px;
   padding-bottom: 30px;
   font-weight: 700;
 }
@@ -1176,7 +1177,7 @@ h6 {
 }
 .signin-page-main .banner h1 span {
   color: var(--black-color);
-  text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+  text-shadow: 0 2px #808d93, -1px 0px #cdd2d5, 2px 2px #808d93;
 }
 
 .signin-page-main .banner p {
@@ -1245,6 +1246,7 @@ h6 {
   padding: 22px;
   border: none !important;
   outline: none !important;
+  font-weight: var(--bold);
 }
 @media (max-width: 767.98px) {
   .signin-page-con .input-group input {
@@ -1275,9 +1277,9 @@ h6 {
 }
 @media (min-width: 768px) and (max-width: 1399.98px) {
   .signin-main .header {
-    padding-top: 70px;
-    padding-left: 87px;
-    padding-bottom: 70px;
+    padding-top: 22px;
+    padding-left: 22px;
+    padding-bottom: 40px;
   }
 }
 .signin-main .header .logo {
@@ -1333,7 +1335,6 @@ h6 {
 .signin-main .form .form-check {
   margin-right: auto;
   width: 100%;
-  height: 144px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -1437,8 +1438,7 @@ h6 {
 }
 
 .loginto-dgtv .form {
-  width: 900px !important;
-  height: 686px;
+  width: 595px !important;
 }
 
 @media (max-width: 1199.98px) {
@@ -1452,7 +1452,7 @@ h6 {
   }
 }
 .registration-main {
-  background: linear-gradient(to bottom, rgba(20, 20, 20, 0.644), rgba(12, 12, 12, 0.377)), url(../images/Banner/formbanner.png);
+  background: linear-gradient(to bottom, rgba(12, 12, 12, 0.377), rgba(20, 20, 20, 0.644)), url(../images/Banner/formbanner.png);
 }
 
 @media (max-width: 767.98px) {
@@ -1475,12 +1475,13 @@ h6 {
 
 .registration-main .form {
   width: 600px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 @media (max-width: 767.98px) {
   .registration-main .form {
-    padding: 10px 0;
+    padding: 35px 0;
     width: 90%;
   }
 }
@@ -2256,6 +2257,50 @@ input {
 .register-check b {
   color: var(--black-color) !important;
   font-size: var(--smaller-font-size);
+}
+
+.extra-space {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.verify-pass input[type=text] {
+  height: 45px;
+  width: 45px;
+  font-size: 25px;
+  text-align: center;
+  border: 1px solid #000000;
+}
+.verify-pass input[type=text]::-webkit-inner-spin-button,
+.verify-pass input[type=text]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.check-pare-down {
+  color: var(--white-color);
+}
+.check-pare-down a {
+  color: var(--primary-color) !important;
+}
+.check-pare-down a:hover {
+  color: #8d0a0a !important;
+}
+
+.popup-terms-btn {
+  position: absolute;
+  position: absolute;
+  top: 23px;
+  right: 24px;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+}
+
+.popup-terms-main {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
