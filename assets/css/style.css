@@ -1843,7 +1843,7 @@ h6 {
 }
 
 .terms-main {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 100px;
   position: relative;
   padding-top: 70px;
@@ -2240,10 +2240,15 @@ input {
   margin-bottom: 20px;
 }
 .register-area-con div {
-  width: 150px;
-  height: 200px;
+  width: 130px;
+  height: 161px;
   background-color: white;
   margin-left: 5px;
+}
+.register-area-con div img,
+.register-area-con div svg {
+  width: 100%;
+  height: 100%;
 }
 
 .rech-2 {
