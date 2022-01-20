@@ -6,11 +6,11 @@
   --title-color: #3e4657;
   --description-color: #676b74;
   --meta-color: #1d1c1c;
-  --desable-color: #a5a5a5;
+  --desable-color: #696969;
   --background-color: #193a7f;
   --border-color: #e8e8e8;
   --yellow-color:rgb(245, 177, 75);
-  --yellow-light:rgb(253, 217, 163);
+  --yellow-light:rgba(255, 236, 210, 0.815);
   --ash-color: #f4f4f4;
   --white-color: #ffffff;
   --black-color: #000000;
@@ -2161,7 +2161,7 @@ button:disabled,
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 100px;
+  padding-right: 150px;
   padding-top: 50px;
   padding-bottom: 30px;
 }
@@ -2171,8 +2171,14 @@ button:disabled,
     padding-left: 50px;
   }
 }
+@media (max-width: 575.98px) {
+  .invoice-main .invoice-left {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
 .invoice-main .invoice-left .content {
-  max-width: 350px;
+  max-width: 400px;
   margin-left: auto;
 }
 @media (max-width: 991.98px) {
@@ -2181,29 +2187,29 @@ button:disabled,
   }
 }
 .invoice-main .invoice-left .content .content-up {
-  font-size: 10px;
+  font-size: 14px;
 }
 .invoice-main .invoice-left .content .content-up span {
   background: white;
   border-radius: 50%;
-  padding: 4px 6px;
+  padding: 0px 6px;
   width: 25px;
   height: 25px;
   display: inline-block;
 }
 .invoice-main .invoice-left .content .content-up span svg {
-  fill: #474747;
+  fill: #838383;
 }
 .invoice-main .invoice-left .content .content-up a {
   font-weight: 500;
-  color: var(--yellow-light);
+  color: var(--white-color);
 }
 .invoice-main .invoice-left .content .content-up a:hover {
-  color: #c7c7c7;
+  color: #d1d1d1;
 }
 .invoice-main .invoice-left .content .content-up button {
   border-radius: 4px;
-  background-color: var(--yellow-light);
+  background-color: #ffc56f;
   color: var(--primary-color);
   outline: none;
   border: none;
@@ -2213,7 +2219,7 @@ button:disabled,
   background-color: #f8a322;
 }
 .invoice-main .invoice-left .content p {
-  font-size: var(--smaller-font-size);
+  font-size: var(--normal-font-size);
   color: var(--yellow-light);
 }
 .invoice-main .invoice-left .content .content-dol p {
@@ -2223,9 +2229,6 @@ button:disabled,
   color: var(--yellow-light);
   padding-top: 6px;
 }
-.invoice-main .invoice-left .content .content-dol h3 {
-  font-weight: 400 !important;
-}
 .invoice-main .invoice-left .content nav ul {
   list-style: none;
   padding-left: 0;
@@ -2233,7 +2236,7 @@ button:disabled,
 }
 .invoice-main .invoice-left .content nav ul li > a {
   margin-right: 12px;
-  font-size: 12px;
+  font-size: var(--normal-font-size);
   color: var(--yellow-light);
 }
 
@@ -2242,7 +2245,7 @@ button:disabled,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 100px;
+  padding-left: 150px;
   padding-bottom: 70px;
 }
 @media (max-width: 1199.98px) {
@@ -2252,7 +2255,13 @@ button:disabled,
   }
 }
 .invoice-right .content-right {
+  width: 400px;
   margin-right: auto;
+}
+@media (max-width: 575.98px) {
+  .invoice-right .content-right {
+    max-width: 300px;
+  }
 }
 @media (max-width: 991.98px) {
   .invoice-right .content-right {
@@ -2263,7 +2272,6 @@ button:disabled,
   margin-right: auto;
   text-align: center;
   justify-content: center;
-  max-width: 350px;
   padding-top: 30px;
 }
 .invoice-right .invoice-right-up .bi-check2-circle {
@@ -2277,14 +2285,14 @@ button:disabled,
   line-height: 35px;
 }
 .invoice-right .invoice-right-up p {
-  font-size: 12px;
+  font-size: var(--normal-font-size);
   color: var(--description-color);
 }
 .invoice-right .invoice-right-up .box {
   display: flex;
   justify-content: space-around;
-  background: var(--desable-color);
-  font-size: var(--smaller-font-size);
+  background: #dfdfdf;
+  font-size: var(--normal-font-size);
   color: var(--description-color);
   padding: 15px 12px;
   border: 1px solid silver;
@@ -2294,32 +2302,45 @@ button:disabled,
 
 .invoice-right-down {
   margin-top: 10px;
-  max-width: 350px;
   margin-right: auto;
   text-align: center;
   padding: 20px 15px;
   border-radius: 8px;
   border: 1px solid silver;
 }
+.invoice-right-down .invoice-logo {
+  width: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+.invoice-right-down .invoice-logo .bi-check-circle-fill {
+  position: absolute;
+  fill: #04d462;
+  bottom: -8px;
+  right: 16px;
+}
 .invoice-right-down .invoice-logo .bi-journal-richtext {
   width: 60px;
   height: 60px;
   fill: silver;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .invoice-right-down p {
   margin-top: 20px;
-  margin-bottom: 2px;
-  font-size: 12px;
+  margin-bottom: 7px;
+  font-size: var(--normal-font-size);
   color: var(--desable-color);
+  font-weight: 500 !important;
 }
 .invoice-right-down h3 {
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   color: var(--black-color);
 }
 .invoice-right-down a {
-  font-size: 12px;
+  font-size: var(--normal-font-size);
   color: var(--description-color);
   transition: all 0.4s ease-in;
+  font-weight: 500 !important;
 }
 .invoice-right-down a:hover {
   color: #141414;
@@ -2332,8 +2353,9 @@ button:disabled,
   margin-top: 0;
 }
 .invoice-right-down .invoice-details span {
-  font-size: 12px;
-  color: #686868;
+  font-size: var(--normal-font-size);
+  color: #1a1a1a;
+  font-weight: 500;
 }
 .invoice-right-down .invoice-btns {
   display: flex;
@@ -2342,13 +2364,14 @@ button:disabled,
   flex-grow: 1;
   border: 1px solid var(--background-color);
   outline: none;
-  font-size: 12px;
+  font-size: var(--normal-font-size);
   border-radius: 4px;
   padding: 3px 7px;
   transition: all 0.3s ease-in;
+  font-weight: 500;
 }
 .invoice-right-down .invoice-btns button:first-child {
-  margin-right: 5px;
+  margin-right: 10px;
   background-color: var(--white-color);
 }
 .invoice-right-down .invoice-btns button:first-child:hover {
@@ -2380,7 +2403,7 @@ button:disabled,
 }
 #offcanvasScrolling3 .invoice-summary li {
   text-transform: capitalize;
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
 }
 #offcanvasScrolling3 .invoice-summary li:first-child {
   width: 70px;
@@ -2395,10 +2418,9 @@ button:disabled,
 
 .invoice-offcavas-date .invoice-offcavas-date-left p {
   color: #949494;
-  font-size: 14px;
+  font-size: var(--normal-font-size);
 }
 .invoice-offcavas-date .invoice-offcavas-date-left h6 {
-  font-size: 14px;
   color: #363636;
   font-weight: 500 !important;
 }
