@@ -2209,10 +2209,10 @@ button:disabled,
 .invoice-main .invoice-left .content .content-up span {
   background: white;
   border-radius: 50%;
-  width: 27px;
-  height: 27px;
+  width: 28px;
+  height: 28px;
   display: inline-block;
-  padding: 1px 8px;
+  padding: 3px 8px;
 }
 .invoice-main .invoice-left .content .content-up span svg {
   fill: rgba(26, 26, 26, 0.5);
