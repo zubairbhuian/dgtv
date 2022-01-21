@@ -5,14 +5,14 @@
   --primary-color: #b30e0e;
   --secondary-color: #193a80;
   --title-color: #3e4657;
-  --description-color: #676b74;
+  --description-color: rgba(26,26,26,.5);
   --meta-color: #1d1c1c;
-  --desable-color: #696969;
+  --desable-color: rgba(26,26,26,.5);
   --background-color: #193a7f;
   --border-color: #e8e8e8;
-  --yellow-color:rgb(245, 177, 75);
-  --yellow-light:rgba(255, 236, 210, 0.507);
-  --ash-color: #f4f4f4;
+  --yellow-color:rgb(228, 210, 47);
+  --yellow-light:rgba(255, 255, 255, 0.555);
+  --ash-color: #f4f4f4ea;
   --white-color: #ffffff;
   --black-color: #000000;
   --body-color: rgb(0, 0, 0);
@@ -2160,7 +2160,7 @@ button:disabled,
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .invoice-main .invoice-left {
-  background-color: var(--primary-color);
+  background-color: #a40000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2209,22 +2209,22 @@ button:disabled,
 .invoice-main .invoice-left .content .content-up span {
   background: white;
   border-radius: 50%;
-  padding: 0px 6px;
-  width: 25px;
-  height: 25px;
+  width: 27px;
+  height: 27px;
   display: inline-block;
+  padding: 1px 8px;
 }
 .invoice-main .invoice-left .content .content-up span svg {
-  fill: #838383;
+  fill: rgba(26, 26, 26, 0.5);
 }
 .invoice-main .invoice-left .content .content-up a {
   font-weight: 400;
-  color: var(--white-color);
+  color: #f3f3f3;
   cursor: text;
 }
 .invoice-main .invoice-left .content .content-up button {
   border-radius: 4px;
-  background-color: #ffc56f;
+  background-color: #fdd393;
   color: var(--primary-color);
   outline: none;
   border: none;
@@ -2234,19 +2234,20 @@ button:disabled,
   cursor: text;
 }
 .invoice-main .invoice-left .content p {
-  font-size: var(--normal-font-size);
-  color: var(--yellow-light);
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6);
 }
 .invoice-main .invoice-left .content .content-dol p {
   line-height: 13px;
   margin-left: 5px;
   font-size: 13px;
-  color: var(--yellow-light);
+  color: rgba(255, 255, 255, 0.6);
   padding-top: 6px;
   font-weight: 500 !important;
 }
 .invoice-main .invoice-left .content .content-dol h2 {
   font-weight: 600 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .invoice-main .invoice-left .content nav ul {
   list-style: none;
@@ -2256,16 +2257,13 @@ button:disabled,
 .invoice-main .invoice-left .content nav ul .border-right {
   padding-right: 8px;
   margin-right: 8px;
-  border-right: 1px solid rgba(236, 173, 0, 0.486);
+  border-right: 1px solid rgba(236, 234, 227, 0.158);
   color: var(--yellow-light);
 }
 .invoice-main .invoice-left .content nav ul li > a {
   margin-right: 12px;
-  font-size: var(--normal-font-size);
-  color: var(--yellow-light);
-}
-.invoice-main .invoice-left .content nav ul li > a:hover {
-  color: var(--white-color);
+  font-size: var(--small-font-size);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width: 991.98px) {
@@ -2279,7 +2277,7 @@ button:disabled,
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: 150px;
+  padding-left: 72px;
   padding-bottom: 70px;
 }
 @media (max-width: 1199.98px) {
@@ -2316,11 +2314,12 @@ button:disabled,
 }
 .invoice-right .invoice-right-up h5 {
   font-weight: 600 !important;
-  color: var(--black-color);
+  color: rgba(26, 26, 26, 0.9);
   line-height: 35px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .invoice-right .invoice-right-up p {
-  font-size: var(--normaler-font-size);
+  font-size: var(--small-font-size);
   color: var(--description-color);
   padding-left: 1px;
   padding-right: 1px;
@@ -2329,7 +2328,7 @@ button:disabled,
   display: flex;
   justify-content: space-around;
   background: white;
-  font-size: var(--normaler-font-size);
+  font-size: var(--small-font-size);
   color: var(--description-color);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -2342,11 +2341,12 @@ button:disabled,
   padding: 22px;
 }
 .invoice-right nav {
-  color: #6b6b6b;
+  color: rgba(26, 26, 26, 0.5);
   width: 200px;
   justify-content: center;
   text-align: center;
   margin: 0 auto;
+  font-size: var(--small-font-size);
 }
 @media (min-width: 992px) {
   .invoice-right nav {
@@ -2362,11 +2362,8 @@ button:disabled,
 }
 .invoice-right nav ul li > a {
   margin-right: 12px;
-  font-size: var(--normal-font-size);
-  color: #6b6b6b;
-}
-.invoice-right nav ul li > a:hover {
-  color: red;
+  font-size: var(--smaller-font-size);
+  color: rgba(26, 26, 26, 0.5);
 }
 
 .invoice-right-down {
@@ -2404,6 +2401,7 @@ button:disabled,
 .invoice-right-down h3 {
   font-weight: 600 !important;
   color: var(--black-color);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .invoice-right-down a {
   font-size: var(--normal-font-size);
@@ -2492,6 +2490,7 @@ button:disabled,
 .invoice-offcavas-date .invoice-offcavas-date-left h6 {
   color: #363636;
   font-weight: 500 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .message-offcanvas {
