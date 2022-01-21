@@ -2519,8 +2519,7 @@ button:disabled,
   background-color: var(--white-color);
 }
 .invoice-btns button:first-child:hover {
-  background-color: #cccccc;
-  color: var(--white-color);
+  background-color: #ebebeb;
   border-color: #cccccc;
 }
 .invoice-btns button:last-child {
