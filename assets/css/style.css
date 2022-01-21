@@ -157,6 +157,10 @@ button:disabled,
   background: var(--white-color);
 }
 
+.block {
+  display: block;
+}
+
 .modal-content {
   background: var(--meta-color);
 }
@@ -2156,7 +2160,6 @@ button:disabled,
   height: 100vh;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .invoice-main .invoice-left {
@@ -2491,6 +2494,61 @@ button:disabled,
   color: #363636;
   font-weight: 500 !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.invoice-btns {
+  display: flex;
+}
+@media (min-width: 576px) {
+  .invoice-btns {
+    padding: 0 8px;
+  }
+}
+.invoice-btns button {
+  flex-grow: 1;
+  border: 1px solid var(--background-color);
+  outline: none;
+  font-size: var(--normal-font-size);
+  border-radius: 4px;
+  padding: 8px 3px;
+  transition: all 0.3s ease-in;
+  font-weight: 500;
+}
+.invoice-btns button:first-child {
+  margin-right: 10px;
+  background-color: var(--white-color);
+}
+.invoice-btns button:first-child:hover {
+  background-color: #cccccc;
+  color: var(--white-color);
+  border-color: #cccccc;
+}
+.invoice-btns button:last-child {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+.invoice-btns button:last-child:hover {
+  background-color: #2e2d2d;
+  color: var(--white-color);
+}
+
+@media (min-width: 576px) {
+  .invoice-btns2 {
+    padding: 0 8px;
+  }
+}
+.invoice-btns2 .btn-100 {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: var(--black-color);
+  transition: all 0.3s ease-in;
+}
+.invoice-btns2 .btn-100:hover {
+  background-color: #2e2d2d;
 }
 
 .message-offcanvas {
