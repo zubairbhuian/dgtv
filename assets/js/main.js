@@ -78,3 +78,24 @@ function onFocusEvent(index) {
     }
   }
 } 
+// Eye Function
+function myEye() {
+  const x = document.querySelector("#password-eye");
+document.querySelector(".pass-eye-mid").classList.toggle("fa-eye-slash");
+
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+function myEyeOne() {
+  const x = document.querySelector("#password-eye-one");
+document.querySelector(".pass-eye-mid-one").classList.toggle("fa-eye-slash");
+
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}

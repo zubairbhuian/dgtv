@@ -5,13 +5,13 @@
   --primary-color: #b30e0e;
   --secondary-color: #193a80;
   --title-color: #3e4657;
-  --description-color: rgba(26,26,26,.5);
+  --description-color: rgb(143, 143, 143);
   --meta-color: #1d1c1c;
-  --desable-color: rgba(26,26,26,.5);
+  --desable-color: rgba(26, 26, 26, 0.5);
   --background-color: #193a7f;
   --border-color: #e8e8e8;
-  --yellow-color:rgb(228, 210, 47);
-  --yellow-light:rgba(255, 255, 255, 0.555);
+  --yellow-color: rgb(228, 210, 47);
+  --yellow-light: rgba(255, 255, 255, 0.555);
   --ash-color: #f4f4f4ea;
   --white-color: #ffffff;
   --black-color: #000000;
@@ -2323,7 +2323,7 @@ button:disabled,
 }
 .invoice-right .invoice-right-up p {
   font-size: var(--small-font-size);
-  color: var(--description-color);
+  color: rgba(26, 26, 26, 0.5);
   padding-left: 1px;
   padding-right: 1px;
 }
@@ -2332,7 +2332,7 @@ button:disabled,
   justify-content: space-around;
   background: white;
   font-size: var(--small-font-size);
-  color: var(--description-color);
+  color: rgba(26, 26, 26, 0.5);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   position: relative;
@@ -2398,7 +2398,7 @@ button:disabled,
   margin-top: 20px;
   margin-bottom: 7px;
   font-size: var(--normal-font-size);
-  color: var(--desable-color);
+  color: rgba(26, 26, 26, 0.5);
   font-weight: 500 !important;
 }
 .invoice-right-down h3 {
@@ -2408,7 +2408,7 @@ button:disabled,
 }
 .invoice-right-down a {
   font-size: var(--normal-font-size);
-  color: var(--description-color);
+  color: rgba(26, 26, 26, 0.5);
   transition: all 0.4s ease-in;
   font-weight: 500 !important;
 }
@@ -2548,6 +2548,27 @@ button:disabled,
 }
 .invoice-btns2 .btn-100:hover {
   background-color: #2e2d2d;
+}
+
+.pass-eye {
+  width: 50px;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.pass-eye .pass-eye-mid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pass-eye .pass-eye-mid-one {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .message-offcanvas {
