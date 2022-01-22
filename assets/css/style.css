@@ -2705,6 +2705,11 @@ input {
   height: 60px;
   margin-bottom: 10px;
 }
+@media (max-width: 575.98px) {
+  .extra-space {
+    height: 84px;
+  }
+}
 
 .verify-pass input[type=text] {
   height: 45px;
