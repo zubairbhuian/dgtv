@@ -162,7 +162,7 @@ button:disabled,
 }
 
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 .modal-content {
