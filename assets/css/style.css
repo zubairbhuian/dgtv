@@ -149,8 +149,8 @@ h6 {
 input:disabled,
 button:disabled,
 .btn:disabled {
-  background-color: #555;
-  color: #ffff;
+  background-color: #555 !important;
+  color: #ffff !important;
 }
 
 .bg-white {
@@ -159,6 +159,10 @@ button:disabled,
 
 .block {
   display: block;
+}
+
+.d-none {
+  display: none;
 }
 
 .modal-content {
